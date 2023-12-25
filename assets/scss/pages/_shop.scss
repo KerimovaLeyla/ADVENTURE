@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    background-color: transparent;
+    z-index: 1;
+    position: absolute;
+    padding: 20px;
+    font-size: 15px;
+
+
+    @media screen and (max-width:992px) and (min-width: 661px) {
+
+        .navbar-nav {
+            width: 100%;
+            background-color: black;
+            padding: 20px;
+            margin-top: 10px;
+
+        }
+    }
+
+    @media screen and (min-width:297px) and (max-width: 660px) {
+        .navbar-nav {
+            width: 100%;
+            padding: 20px;
+            background-color: black;
+            margin-top: 10px;
+
+        }
+    }
+
+    .navbar-light .navbar-nav .active>.nav-link,
+    .navbar-light .navbar-nav .nav-link.active,
+    .navbar-light .navbar-nav .nav-link.show,
+    .navbar-light .navbar-nav .show>.nav-link {
+        color: white;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        color: white;
+    }
+
+    nav {
+        width: 95%;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: white;
+
+        .collapseDiv {
+
+            justify-content: flex-end;
+        }
+
+        ul {
+            gap: 5px;
+        }
+    }
+}
+
+#dicoverColorWord {
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/assets/img/slider3.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;    background-attachment: fixed;
+
+    .discover {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        h4 {
+            margin-top: 28px;
+            padding: 28px 0px 15px 0px;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 60px;
+            font-weight: 700;
+        }
+
+        P {
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+
+        button {
+            cursor: pointer;
+            margin: 28px 0px;
+            padding: 10px 28px;
+            border-radius: 20px;
+            color: black;
+            font-weight: 600;
+            text-transform: uppercase;
+            background-color: white;
+            border: 1px solid white;
+
+            &:hover {
+                background-color: transparent;
+                color: white;
+            }
+        }
+    }
+}
+
+#extremly {
+    width: 100%;
+    margin: 28px 0px;
+    padding: 28px 0px;
+
+    .extremlyLove {
+        width: 100%;
+        text-align: center;
+        margin: 28px 0px;
+        padding: 28px 0px;
+
+
+    }
+
+    .madeUnique {
+        margin-top: 28px;
+        padding: 28px;
+        cursor: pointer;
+
+        span {
+            margin-right: 10px;
+            font-size: 20px;
+        }
+
+        &:hover {
+            color: white;
+            background-color: #782AE1;
+            box-shadow: 0 1px 10px rgb(0, 0, 0.2);
+        }
+
+        p {
+            font-weight: 100;
+            margin: 20px 0px;
+            margin-right: 10px;
+            font-size: 17px;
+        }
+
+    }
+}
+
+footer {
+    background-color: black;
+    border-top: 1px solid rgb(121, 118, 118);
+    padding: 28px;
+    margin-top: 28px;
+    text-align: center;
+    color: white;
+
+}
+
+#aboutInf {
+    background-color: black;
+    padding: 28px;
+
+    #products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 35px;
+        width: 100%;
+        color: #fff;
+
+        .box {
+            width: 250px;
+
+            img {
+                padding-bottom: 10px;
+                width: 100%;
+            }
+
+            p {
+                font-size: 25px;
+            }
+
+            button {
+                cursor: pointer;
+                color: #fff;
+                background-color: #782AE1;
+                transition: 1s;
+                padding: 10px;
+                border-radius: 20px;
+                border: 1px solid #782AE1;
+                display: flex;
+                gap: 10px;
+                justify-content: center;
+                align-items: center;
+
+                i {
+                    margin-top: 0.5rem;
+                    margin: 0 0.3rem;
+                }
+
+                &:hover {
+                    border: none;
+                    background-color: #fff;
+                    color: black;
+
+                }
+            }
+        }
+    }
+}
+
+#filtered {
+    border: 3px solid black;
+
+    .btn-outline-success {
+        background-color: #111111;
+        color: #fff;
+    }
+
+    span {
+        font-weight: bold;
+        padding-right: 5px;
+        color: #782AE1;
+    }
+
+    margin: 25px 0;
+
+    .filter {
+        input {
+            cursor: pointer;
+        }
+    }
+
+}
